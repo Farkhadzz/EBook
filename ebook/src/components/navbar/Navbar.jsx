@@ -8,7 +8,7 @@ function Navbar() {
                     <div className="container">
 
                         <a href="#" className="logo">
-                            <img src="#" width="138" height="28" alt="EBook home" />
+                            <img src="icon.png" width="80" alt="EBook home" />
                         </a>
 
                         <div className="input-wrapper">
@@ -35,7 +35,7 @@ function Navbar() {
                             <ul className="navbar-list">
 
                                 <li>
-                                    <a href="#" className="navbar-link">Home</a>
+                                    <a href="/Home" className="navbar-link">Home</a>
                                 </li>
 
                                 <li>
@@ -59,6 +59,14 @@ function Navbar() {
                                     <a href="#" className="navbar-link">Contact</a>
                                 </li>
 
+                            </ul>
+
+                            <ul className="navbar-list">
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        <a href="/Authentication" className="navbar-auth">person_add</a>
+                                    </span>
+                                </li>
                             </ul>
 
                         </nav>
