@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Pathway+Gothic+One&display=swap');
+
 :root {
 
   /**
@@ -1411,93 +1413,175 @@ body {
 
 /* REGISTRATION SECTION */
 
-.reg{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 70vh;
-	font-family: 'Jost', sans-serif;
-	background: transparent;
-}
-.main{
-	width: 450px;
-	height: 610px;
-	background: red;
-	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
-}
-#chk{
-	display: none;
-}
-.signup{
-	position: relative;
-	width:100%;
-	height: 100%;
-}
-.form-label{
-	color: var(--orange);
-	font-size: 2.3em;
-	justify-content: center;
-	display: flex;
-	margin: 40px;
-	font-weight: bold;
-	cursor: pointer;
-	transition: .5s ease-in-out;
-}
-.form-input{
-	width: 60%;
-	height: 40px;
-	background: #e0dede;
-	justify-content: center;
-	display: flex;
-	margin: 20px auto;
-	padding: 10px;
-	border: none;
-	outline: none;
-	border-radius: 5px;
-}
-.form-button{
-	width: 60%;
-	height: 40px;
-	margin: 10px auto;
-	justify-content: center;
-	display: block;
-	color: #fff;
-	background: var(--orange);
-	font-size: 1em;
-	font-weight: bold;
-	margin-top: 20px;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	transition: .2s ease-in;
-	cursor: pointer;
-}
-.form-button:hover{
-	background: #ff3300;
-}
-.login{
-	height: 460px;
-	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
-	transition: .8s ease-in-out;
-}
-.login label{
-	color: var(--orange);
-	transform: scale(.6);
+.reg {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-family: 'Jost', sans-serif;
+  background: transparent;
 }
 
-#chk:checked ~ .login{
-	transform: translateY(-500px);
+.main {
+  width: 450px;
+  height: 610px;
+  background: red;
+  overflow: hidden;
+  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
 }
-#chk:checked ~ .login label{
-	transform: scale(1);	
+
+#chk {
+  display: none;
 }
-#chk:checked ~ .signup label{
-	transform: scale(.6);
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.form-label {
+  color: var(--orange);
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.form-input {
+  width: 60%;
+  height: 40px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form-button {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: var(--orange);
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: #ff3300;
+}
+
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: .8s ease-in-out;
+}
+
+.login label {
+  color: var(--orange);
+  transform: scale(.6);
+}
+
+#chk:checked~.login {
+  transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+  transform: scale(1);
+}
+
+#chk:checked~.signup label {
+  transform: scale(.6);
+}
+
+/* BOOK COVER  */
+
+.book-section {
+  display: flex;
+  align-items: center;
+}
+
+.book-cover {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.book-cover img {
+  width: 70vh;
+  height: auto;
+}
+
+.book-info {
+  flex: 2;
+}
+
+/* Пример стилей для описания книги */
+.book-info h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.book-info p {
+  font-size: 26px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.book-info h2 {
+  font-family: "Caveat", cursive;
+  margin-top: 20px;
+}
+
+.book-info h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buy-button {
+  margin-top: 25px;
+  background-color: var(--orange);
+  border-radius: 100px;
+  box-shadow: rgba(255, 98, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 149, 0, 0.15) 0 1px 2px,rgba(255, 153, 0, 0.15) 0 2px 4px,rgba(255, 123, 0, 0.15) 0 4px 8px,rgba(255, 77, 0, 0.15) 0 8px 16px,rgba(255, 132, 0, 0.15) 0 16px 32px;
+  color: var((--orange));
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: uppercase;
+}
+
+.buy-button:hover {
+  transform: scale(1.1) rotate(-1deg);
 }

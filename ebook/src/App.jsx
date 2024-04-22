@@ -5,12 +5,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Authentication from './components/authentication_page/Authentication';
 import Home from './components/home_page/Home';
+import Book from './components/book_show_page/Book';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='*' element={<Home/>} />
+        <Route path='*' element={<Book/>} />
         <Route path='/Authentication' element={<Authentication/>} />
       </Routes>
     </BrowserRouter>
