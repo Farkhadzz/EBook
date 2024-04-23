@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Features from "../features/Features";
 import Collection from "../collections/Collection";
+import LoginedUserNav from "../logined_user_navbar/LoginedUserNav";
 
 function Header() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
+            <LoginedUserNav/>
             <section className="section hero has-bg-image">
                 <div className="container">
                     <div className="animate__animated animate__zoomInLeft">
