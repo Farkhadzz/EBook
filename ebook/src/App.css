@@ -409,6 +409,7 @@ body {
 }
 
 .dropdown-link {
+  font-size: 12px;
   text-decoration: none;
   color: #333;
 }
@@ -1665,8 +1666,9 @@ a
 }
 
 .product-tumb img {
+  max-height: 301px;
   height: 300px;
-  width: 250px;
+  width: auto;
 }
 
 .product-details {
