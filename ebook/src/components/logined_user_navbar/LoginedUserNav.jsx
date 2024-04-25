@@ -44,7 +44,7 @@ function LoginedUserNav() {
 
                                 <li>
                                     <a href="#" className="navbar-link">Genres</a>
-                                    <ul className="dropdown-menu">
+                                    <ul className="dropdown-menu animate__animated animate__bounceIn">
                                         <li><a href="#" className="dropdown-link">Fiction</a></li>
                                         <li><a href="#" className="dropdown-link">Non-Fiction</a></li>
                                         <li><a href="#" className="dropdown-link">Science Fiction</a></li>
