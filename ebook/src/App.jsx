@@ -11,8 +11,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='*' element={<Home/>} />
-        <Route path='/Authentication' element={<Authentication/>} />
+        <Route path='*' element={<Home />} />
+        <Route path='home' element={<Home />} />
+        <Route path='/authentication' element={<Authentication />} />
+        <Route path='/bookview' element={<Book />} />
       </Routes>
     </BrowserRouter>
   );

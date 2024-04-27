@@ -7,8 +7,8 @@ import LoginedUserNav from "../logined_user_navbar/LoginedUserNav";
 function Header() {
     return (
         <>
-            {/* <Navbar /> */}
-            <LoginedUserNav/>
+            <Navbar />
+            {/* <LoginedUserNav/> */}
             <section className="section hero has-bg-image">
                 <div className="container">
                     <div className="animate__animated animate__zoomInLeft">

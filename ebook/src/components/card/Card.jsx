@@ -1,14 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Card({ imageSrc, category, title, description, price }) {
     return (
         <div className="product-card">
             <div className="product-tumb">
-                <img src={imageSrc} alt={title} />
+                <Link to="/BookView">
+                    <img src={imageSrc} alt={title} />
+                </Link>
             </div>
             <div className="product-details">
                 <span className="product-catagory">{category}</span>
-                <h4><a href="">{title}</a></h4>
+                <Link to="/BookView">
+                    <h4><a href="">{title}</a></h4>
+                </Link>
                 <p>{description}</p>
                 <div className="product-bottom-details">
                     <div className="product-price">${price}</div>
