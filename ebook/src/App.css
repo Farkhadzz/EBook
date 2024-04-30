@@ -416,6 +416,7 @@ body {
 
 .dropdown-link:hover {
   color: var(--orange);
+  text-decoration: none;
 }
 
 
@@ -526,6 +527,7 @@ body {
 .navbar-link {
   padding-block: 10px;
   transition: var(--transition-1);
+  text-decoration: none;
 }
 
 .navbar-auth {
@@ -534,15 +536,25 @@ body {
   font-size: 24px;
 }
 
+.navbar-auth:hover {
+  color: var(--orange);
+  text-decoration: none;
+} 
+
 .navbar-link:is(:hover, :focus) {
   color: var(--orange);
+  text-decoration: none;
+}
+
+.navbar-link a{
+  text-decoration: none;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 62rem;
+  gap: 52rem;
 }
 
 .user-logined-navbar {
@@ -1459,7 +1471,7 @@ body {
   font-size: 2.3em;
   justify-content: center;
   display: flex;
-  margin: 40px;
+  margin: 50px;
   font-weight: bold;
   cursor: pointer;
   transition: .5s ease-in-out;
@@ -1782,6 +1794,7 @@ a {
 .social-icon__item,
 .menu__item {
   list-style: none;
+  color: white;
 }
 
 .social-icon__link {
@@ -1809,6 +1822,8 @@ a {
 
 .menu__link:hover {
   opacity: 1;
+  color: white;
+  text-decoration: none;
 }
 
 .footer p {

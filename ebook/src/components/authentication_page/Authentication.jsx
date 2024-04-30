@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
-import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 function Authentication() {
     const [loginChecked, setLoginChecked] = React.useState(false);
@@ -107,6 +107,7 @@ function Authentication() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import BookCard from "../book_show/BookCard";
+import Footer from "../footer/Footer";
 
 function Book() {
     return (
@@ -18,6 +19,7 @@ function Book() {
             soldCopies="124"
             language="English"
             />
+            <Footer/>
         </>
     )
 }
