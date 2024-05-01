@@ -388,6 +388,7 @@ body {
 
 .navbar-list li {
   position: relative;
+  flex-wrap: nowrap;
 }
 
 
@@ -561,7 +562,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50rem;
+  gap: 35rem;
 }
 
 .overlay {
@@ -1269,6 +1270,8 @@ body {
 
   .navbar-list {
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     gap: 30px;
   }
 
@@ -1647,7 +1650,7 @@ a {
 }
 
 .product-card {
-  width: 380px;
+  width: 300px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 50px auto;
@@ -1760,6 +1763,16 @@ a {
   cursor: pointer;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
 /* FOOTER */
 
 .footer-main {
@@ -1807,6 +1820,7 @@ a {
 
 .social-icon__link:hover {
   transform: translateY(-10px);
+  color: white;
 }
 
 .menu__link {

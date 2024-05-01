@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Authentication from './components/authentication_page/Authentication';
 import Home from './components/home_page/Home';
 import Book from './components/book_show_page/Book';
+import Favorite from './components/favorites_page/Favorite';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='home' element={<Home />} />
         <Route path='/authentication' element={<Authentication />} />
         <Route path='/bookview' element={<Book />} />
+        <Route path='/Favorite' element={<Favorite/>} />
       </Routes>
     </BrowserRouter>
   );

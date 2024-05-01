@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginedUserNav() {
     return (
@@ -35,11 +36,19 @@ function LoginedUserNav() {
                             <ul className="navbar-list">
 
                                 <li>
-                                    <a href="/Home" className="navbar-link">Home</a>
+                                    <Link className="navbar-link" to='/Home'>
+                                        <a>Home</a>
+                                    </Link>
                                 </li>
 
                                 <li>
                                     <a href="#" className="navbar-link">Shop</a>
+                                </li>
+
+                                <li>
+                                    <Link className="navbar-link" to='/Favorite'>
+                                        <a>Favorites</a>
+                                    </Link>
                                 </li>
 
                                 <li>
