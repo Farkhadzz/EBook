@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HeartOutline, HeartSharp } from 'react-ionicons'
+import { CartOutline, CartSharp } from 'react-ionicons'
 
 function Card({ imageSrc, category, title, description, price }) {
+
+    const [isHeartHovered, setIsHeartHovered] = useState(false);
+    const [isHeartClicked, setIsHeartClicked] = useState(false);
+    const [isCartHovered, setIsCartHovered] = useState(false);
+    const [isCartClicked, setIsCartClicked] = useState(false);
+
+    const handleHeartMouseEnter = () => {
+        setIsHeartHovered(true);
+    };
+
+    const handleHeartMouseLeave = () => {
+        setIsHeartHovered(false);
+    };
+
+    const handleHeartClick = () => {
+        setIsHeartClicked(prevState => !prevState);
+    };
+
+    const handleCartMouseEnter = () => {
+        setIsCartHovered(true);
+    };
+
+    const handleCartMouseLeave = () => {
+        setIsCartHovered(false);
+    };
+
+    const handleCartClick = () => {
+        setIsCartClicked(prevState => !prevState);
+    };
+
     return (
         <div className="product-card">
             <div className="product-tumb">
@@ -11,15 +43,43 @@ function Card({ imageSrc, category, title, description, price }) {
             </div>
             <div className="product-details">
                 <span className="product-catagory">{category}</span>
-                <Link to="/BookView">
+                <Link className="product-title" to="/BookView">
                     <h4><a href="">{title}</a></h4>
                 </Link>
                 <p>{description}</p>
                 <div className="product-bottom-details">
                     <div className="product-price">${price}</div>
-                    <div className="product-links">
-                        <a href=""><i className="fa fa-heart"></i></a>
-                        <a href=""><i className="fa fa-shopping-cart"></i></a>
+                    <div className="product-icons">
+                        {isHeartClicked ? (
+                            <HeartSharp
+                                className="product-icon"
+                                onMouseEnter={handleHeartMouseEnter}
+                                onMouseLeave={handleHeartMouseLeave}
+                                onClick={handleHeartClick}
+                            />
+                        ) : (
+                            <HeartOutline
+                                className="product-icon"
+                                onMouseEnter={handleHeartMouseEnter}
+                                onMouseLeave={handleHeartMouseLeave}
+                                onClick={handleHeartClick}
+                            />
+                        )}
+                        {isCartClicked ? (
+                            <CartSharp
+                                className="product-icon"
+                                onMouseEnter={handleCartMouseEnter}
+                                onMouseLeave={handleCartMouseLeave}
+                                onClick={handleCartClick}
+                            />
+                        ) : (
+                            <CartOutline
+                                className="product-icon"
+                                onMouseEnter={handleCartMouseEnter}
+                                onMouseLeave={handleCartMouseLeave}
+                                onClick={handleCartClick}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
@@ -28,6 +88,11 @@ function Card({ imageSrc, category, title, description, price }) {
 }
 
 export default Card;
+
+
+
+
+
 
 
 // import React from "react";

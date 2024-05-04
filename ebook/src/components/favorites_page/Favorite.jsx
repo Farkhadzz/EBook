@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../card/Card";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import LoginedUserNav from "../logined_user_navbar/LoginedUserNav";
 
 function Favorite() {
     const cardData = {
@@ -14,7 +15,7 @@ function Favorite() {
 
     return (
         <>
-        <Navbar/>
+        <LoginedUserNav/>
         <section className="section featured animate__animated animate__zoomInUp" aria-label="featured collection">
             <div className="container">
                 <div className="row">

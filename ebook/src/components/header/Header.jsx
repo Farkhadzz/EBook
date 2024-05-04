@@ -24,7 +24,7 @@ function Header() {
 
                             <div className="btn-wrapper">
 
-                                <a href="#" className="btn">
+                                <a href="#" className="btn btn-border">
                                     <span className="span">STORE</span>
                                 </a>
                             </div>

@@ -61,10 +61,6 @@ function Navbar() {
                                 </li>
 
                                 <li>
-                                    <a href="#" className="navbar-link">About Us</a>
-                                </li>
-
-                                <li>
                                     <a href="#" className="navbar-link">Contact</a>
                                 </li>
 

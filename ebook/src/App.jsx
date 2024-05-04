@@ -7,6 +7,9 @@ import Authentication from './components/authentication_page/Authentication';
 import Home from './components/home_page/Home';
 import Book from './components/book_show_page/Book';
 import Favorite from './components/favorites_page/Favorite';
+import BookList from './components/book_list_page/BookList';
+import BookEditor from './components/books_list_for_admin/BookEditor';
+import AddBook from './components/add_book_page/AddBook';
 
 function App() {
   return (
@@ -14,9 +17,12 @@ function App() {
       <Routes>
         <Route path='*' element={<Home />} />
         <Route path='home' element={<Home />} />
-        <Route path='/authentication' element={<Authentication />} />
+        <Route path='/authe ntication' element={<Authentication />} />
         <Route path='/bookview' element={<Book />} />
         <Route path='/Favorite' element={<Favorite/>} />
+        <Route path='/BookList' element={<BookList/>} />
+        <Route path='/BookEditor' element={<BookEditor/>} />
+        <Route path='/AddBook' element={<AddBook/>} />
       </Routes>
     </BrowserRouter>
   );
