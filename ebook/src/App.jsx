@@ -10,6 +10,7 @@ import Favorite from './components/favorites_page/Favorite';
 import BookList from './components/book_list_page/BookList';
 import BookEditor from './components/books_list_for_admin/BookEditor';
 import AddBook from './components/add_book_page/AddBook';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/BookList' element={<BookList/>} />
         <Route path='/BookEditor' element={<BookEditor/>} />
         <Route path='/AddBook' element={<AddBook/>} />
+        <Route path='/Profile' element={<Profile/>} />
       </Routes>
     </BrowserRouter>
   );

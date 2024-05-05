@@ -1,7 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BasketOutline } from 'react-ionicons'
+import { ChevronDownOutline } from 'react-ionicons'
+import { useState } from "react";
+import { ExitOutline } from 'react-ionicons'
+import { OptionsOutline } from 'react-ionicons'
 
 function LoginedUserNav() {
+
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownOpen(false);
+    };
+
     return (
         <>
             <div className="animate__animated animate__zoomInDown">
@@ -73,12 +89,32 @@ function LoginedUserNav() {
                             </ul>
 
                             <div className="user-info">
+                                <div className="basket">
+                                    <BasketOutline className="basket-icon"
+                                        height="auto"
+                                        width="30px" />
+                                </div>
                                 <div className="user-photo">
                                     <img src="user.png" />
                                 </div>
                                 <div className="user-detail">
                                     <h2>Name Surname</h2>
                                     <h3>testemail@gmail.com</h3>
+                                </div>
+                                <div
+                                    className="dropdown-shape"
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <ChevronDownOutline className="shape" height="auto" width="25px" />
+                                    {dropdownOpen && (
+                                        <div className="shape-dropdown">
+                                            <ul className="animate__animated animate__bounceIn">
+                                                <li><a className="shape-link" href="/Profile"><OptionsOutline /></a></li>
+                                                <li><a className="shape-link"><ExitOutline /></a></li>
+                                            </ul>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </nav>
