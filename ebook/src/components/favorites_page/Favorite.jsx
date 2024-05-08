@@ -16,8 +16,7 @@ function Favorite() {
     return (
         <>
         <LoginedUserNav/>
-        <section className="section featured animate__animated animate__zoomInUp" aria-label="featured collection">
-            <div className="container">
+            <div className="container animate__animated animate__zoomInDown">
                 <div className="row">
                     {Array.from({ length: 4}).map((_, index) => (
                         <div className="col-md-3" key={index}>
@@ -26,7 +25,6 @@ function Favorite() {
                     ))}
                 </div>
             </div>
-        </section>
         <Footer/>
         </>
     );

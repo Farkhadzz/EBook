@@ -11,6 +11,7 @@ import BookList from './components/book_list_page/BookList';
 import BookEditor from './components/books_list_for_admin/BookEditor';
 import AddBook from './components/add_book_page/AddBook';
 import Profile from './components/Profile/Profile';
+import Contact from './components/contact_page/Contact';
 
 function App() {
   return (
@@ -18,13 +19,14 @@ function App() {
       <Routes>
         <Route path='*' element={<Home />} />
         <Route path='home' element={<Home />} />
-        <Route path='/authe ntication' element={<Authentication />} />
+        <Route path='/authentication' element={<Authentication />} />
         <Route path='/bookview' element={<Book />} />
-        <Route path='/Favorite' element={<Favorite/>} />
-        <Route path='/BookList' element={<BookList/>} />
-        <Route path='/BookEditor' element={<BookEditor/>} />
-        <Route path='/AddBook' element={<AddBook/>} />
-        <Route path='/Profile' element={<Profile/>} />
+        <Route path='/favorite' element={<Favorite/>} />
+        <Route path='/book-list' element={<BookList/>} />
+        <Route path='/book-editor' element={<BookEditor/>} />
+        <Route path='/add-book' element={<AddBook/>} />
+        <Route path='/profile' element={<Profile/>} />
+        <Route path='/contact' element={<Contact/>} />
       </Routes>
     </BrowserRouter>
   );

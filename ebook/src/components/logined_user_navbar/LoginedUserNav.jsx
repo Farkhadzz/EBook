@@ -5,6 +5,7 @@ import { ChevronDownOutline } from 'react-ionicons'
 import { useState } from "react";
 import { ExitOutline } from 'react-ionicons'
 import { OptionsOutline } from 'react-ionicons'
+import { HeartOutline } from 'react-ionicons'
 
 function LoginedUserNav() {
 
@@ -52,7 +53,7 @@ function LoginedUserNav() {
                             <ul className="navbar-list">
 
                                 <li>
-                                    <Link className="navbar-link" to='/Home'>
+                                    <Link className="navbar-link" to='/home'>
                                         <a>Home</a>
                                     </Link>
                                 </li>
@@ -62,13 +63,7 @@ function LoginedUserNav() {
                                 </li>
 
                                 <li>
-                                    <Link className="navbar-link" to='/Favorite'>
-                                        <a>Favorites</a>
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link className="navbar-link" to='/BookList'>
+                                    <Link className="navbar-link" to='/book-list'>
                                         <a>Books</a>
                                     </Link>
                                 </li>
@@ -83,16 +78,30 @@ function LoginedUserNav() {
                                 </li>
 
                                 <li>
-                                    <a href="#" className="navbar-link">Contact</a>
+                                    <Link className="navbar-link" to='/contact'>
+                                        <a>Contact</a>
+                                    </Link>
                                 </li>
 
                             </ul>
 
                             <div className="user-info">
-                                <div className="basket">
-                                    <BasketOutline className="basket-icon"
-                                        height="auto"
-                                        width="30px" />
+                                <div className="user-icons">
+                                    <div className="basket">
+                                        <p>(0)</p>
+                                        <BasketOutline className="basket-icon"
+                                            height="auto"
+                                            width="30px" />
+                                    </div>
+                                    <div className="favorites">
+                                        <Link className="navbar-link" to='/favorite'>
+                                            <HeartOutline
+                                                color={'#00000'}
+                                                height="auto"
+                                                width="25px"
+                                            />
+                                        </Link>
+                                    </div>
                                 </div>
                                 <div className="user-photo">
                                     <img src="user.png" />

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HeartOutline } from 'react-ionicons'
 
 function Navbar() {
     return (
@@ -68,11 +69,22 @@ function Navbar() {
 
                             <ul className="navbar-list">
                                 <li>
-                                    <span class="material-symbols-outlined">
-                                        <Link className="navbar-auth" to='/Authentication'>
-                                            <a>person_add</a>
-                                        </Link>
-                                    </span>
+                                    <div className="nav-icons">
+                                        <div className="favorites">
+                                            <Link className="navbar-link" to='/favorite'>
+                                                <HeartOutline
+                                                    color={'#00000'}
+                                                    height="auto"
+                                                    width="25px"
+                                                />
+                                            </Link>
+                                        </div>
+                                        <span class="material-symbols-outlined">
+                                            <Link className="navbar-auth" to='/Authentication'>
+                                                <a>person_add</a>
+                                            </Link>
+                                        </span>
+                                    </div>
                                 </li>
                             </ul>
 
