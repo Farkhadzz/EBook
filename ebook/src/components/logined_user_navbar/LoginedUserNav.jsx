@@ -25,7 +25,7 @@ function LoginedUserNav() {
                 <div className="header-top">
                     <div className="container">
 
-                        <a href="#" className="logo">
+                        <a href="/home" className="logo">
                             <img src="icon.png" width="80" alt="EBook home" />
                         </a>
 
@@ -59,7 +59,9 @@ function LoginedUserNav() {
                                 </li>
 
                                 <li>
-                                    <a href="#" className="navbar-link">Shop</a>
+                                    <Link className="navbar-link" to='/shop'>
+                                        <a>Shop</a>
+                                    </Link>
                                 </li>
 
                                 <li>
@@ -88,7 +90,9 @@ function LoginedUserNav() {
                             <div className="user-info">
                                 <div className="user-icons">
                                     <div className="basket">
-                                        <p>(0)</p>
+                                        <div className="item-counter">
+                                            <p>0</p>
+                                        </div>
                                         <BasketOutline className="basket-icon"
                                             height="auto"
                                             width="30px" />

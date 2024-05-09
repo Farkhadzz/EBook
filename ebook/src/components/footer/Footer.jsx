@@ -29,15 +29,18 @@ function Footer() {
                     </ul>
 
                     <ul class="menu">
-                        <Link to="/Home">
+                        <Link to="/home">
                             <li class="menu__item"><a class="menu__link">Home</a></li>
                         </Link>
-                        <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
-                        <Link to="/Favorite">
+                        <Link to="/shop">
+                            <li class="menu__item"><a class="menu__link">Shop</a></li>
+                        </Link>
+                        <Link to="/favorite">
                             <li class="menu__item"><a class="menu__link">Favorites</a></li>
                         </Link>
-                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                        <Link to="/contact">
+                            <li class="menu__item"><a class="menu__link">Contact</a></li>
+                        </Link>
                         <Link to="/Authentication">
                             <li class="menu__item"><a class="menu__link">Login</a></li>
                         </Link>

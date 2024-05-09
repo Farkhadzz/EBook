@@ -9,7 +9,7 @@ function Navbar() {
                 <div className="header-top">
                     <div className="container">
 
-                        <a href="#" className="logo">
+                        <a href="/home" className="logo">
                             <img src="icon.png" width="80" alt="EBook home" />
                         </a>
 
@@ -43,7 +43,9 @@ function Navbar() {
                                 </li>
 
                                 <li>
-                                    <a href="#" className="navbar-link">Shop</a>
+                                    <Link className="navbar-link" to='/shop'>
+                                        <a>Shop</a>
+                                    </Link>
                                 </li>
 
                                 <li>
@@ -71,7 +73,7 @@ function Navbar() {
                                 <li>
                                     <div className="nav-icons">
                                         <div className="favorites">
-                                            <Link className="navbar-link" to='/favorite'>
+                                            <Link className="navbar-link" to='/authentication'>
                                                 <HeartOutline
                                                     color={'#00000'}
                                                     height="auto"
@@ -80,7 +82,7 @@ function Navbar() {
                                             </Link>
                                         </div>
                                         <span class="material-symbols-outlined">
-                                            <Link className="navbar-auth" to='/Authentication'>
+                                            <Link className="navbar-auth" to='/authentication'>
                                                 <a>person_add</a>
                                             </Link>
                                         </span>

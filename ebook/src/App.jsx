@@ -12,12 +12,14 @@ import BookEditor from './components/books_list_for_admin/BookEditor';
 import AddBook from './components/add_book_page/AddBook';
 import Profile from './components/Profile/Profile';
 import Contact from './components/contact_page/Contact';
+import Shop from './components/shop_page/Shop';
+import NotFound from './components/not_found_page/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='*' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
         <Route path='home' element={<Home />} />
         <Route path='/authentication' element={<Authentication />} />
         <Route path='/bookview' element={<Book />} />
@@ -27,6 +29,7 @@ function App() {
         <Route path='/add-book' element={<AddBook/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/shop' element={<Shop/>} />
       </Routes>
     </BrowserRouter>
   );
